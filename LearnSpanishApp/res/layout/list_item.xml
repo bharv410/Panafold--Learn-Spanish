@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+
+    android:padding="6dip">
+    
+    <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_launcher"/>
+    <!-- Item Name -->
+
+   <TextView
+       android:id="@+id/wordtext"
+       android:layout_width="wrap_content"
+       android:layout_height="26dip"
+       android:textSize="24dp"
+       android:textColor="#F8EFCB"
+       android:layout_alignBottom="@+id/list_image"
+       android:layout_alignParentRight="true"
+       android:layout_alignTop="@+id/list_image"
+       android:layout_toRightOf="@+id/list_image"
+       android:ellipsize="marquee"
+       android:singleLine="true" />
+
+</RelativeLayout>

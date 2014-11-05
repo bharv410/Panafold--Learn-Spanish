@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reviewFragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#555F5F"
+    android:orientation="vertical" >
+
+    <!-- Editext for Search -->
+
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search tanuki words.."
+        android:inputType="textVisiblePassword" />
+
+    <!-- List View -->
+
+    <RelativeLayout
+        android:id="@+id/navBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#F8EFCB" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/aboutbutton"
+            android:scaleType="centerInside"
+            android:onClick="aboutPage" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/button1"
+            android:background="@drawable/purchasebutton"
+            android:scaleType="centerInside"
+            android:onClick="getMoreWords" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:background="@drawable/tutorialbutton"
+            android:scaleType="centerInside"
+            android:onClick="goToTutorialPage" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="356dp"
+        android:layout_above="@+id/navBarLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/inputSearch" >
+
+    </ListView>
+
+</RelativeLayout>

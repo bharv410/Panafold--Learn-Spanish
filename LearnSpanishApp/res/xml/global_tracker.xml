@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+tools:ignore="TypographyDashes">
+  <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    
+    <!-- The screen names that will appear in reports -->
+    <screenName name="com.panafold.SplashScreen">
+        SplashScreen
+    </screenName>
+    
+    <screenName name="com.panafold.AboutPageActivity">
+        About Page
+    </screenName>
+    
+    <screenName name="com.panafold.InAppPurchaseActivity">
+        In-app Purchase
+    </screenName>
+    
+    <screenName name="com.panafold.TutorialActivity">
+        Tutorial
+    </screenName>
+    
+    <screenName name="com.panafold.main.ChangeWordFragment">
+        Review Menu
+    </screenName>
+    
+    <screenName name="com.panafold.main.CurrentWordFragment">
+        View Word
+    </screenName>
+    
+    <screenName name="com.panafold.main.MainActivity">
+        Main Activity
+    </screenName>
+    
+    <screenName name="com.panafold.main.PhraseFragment">
+        Phrase
+    </screenName>
+    
+<screenName name="com.panafold.main.WebsiteFragment">
+        Web Page
+    </screenName>
+    
+<screenName name="com.panafold.Email">
+        Email
+    </screenName>
+    
+    <screenName name="com.panafold.RateThisApp">
+        Rate
+    </screenName>
+    
+<!--  The following value should be replaced with correct property id. -->
+    <string name="ga_trackingId">UA-36006104-2</string>
+</resources>

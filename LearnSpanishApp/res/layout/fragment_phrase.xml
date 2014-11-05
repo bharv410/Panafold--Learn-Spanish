@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/phraseFrag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#555F5F" >
+
+    <Button
+        android:id="@+id/soundButtonPhrase"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/japanesePhrase"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/soundicon"
+        android:onClick="speakOutPhrase" 
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/spanishPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_margin="12dp"
+        android:textColor="#F8EFCB"
+        android:text="Spanish Phrase"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/englishPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spanishPhrase"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:text="English Phrase"
+        android:textColor="#F8EFCB"
+        android:textSize="25sp" />
+
+</RelativeLayout>
