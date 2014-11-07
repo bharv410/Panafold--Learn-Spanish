@@ -21,7 +21,6 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.location.Location;
@@ -231,17 +230,15 @@ public class MainActivity extends FragmentActivity implements
 	@Override
 	public void onInit(int status) {
 		Button soundIcon = (Button) findViewById(R.id.soundButton);
-		Button soundIcon2 = (Button) findViewById(R.id.soundButtonPhrase);
 		try {
 			soundIcon.setVisibility(View.VISIBLE);
-			soundIcon2.setVisibility(View.VISIBLE);
 		} catch (NullPointerException n) {
 
 		}
 		if (status == TextToSpeech.SUCCESS) {
 			Locale loc = new Locale("spa", "ESP");
 			int result = tts.setLanguage(loc);
-			tts.setSpeechRate((float) 0.2);
+			tts.setSpeechRate((float) 0.6);
 			if (result == TextToSpeech.LANG_MISSING_DATA
 					|| result == TextToSpeech.LANG_NOT_SUPPORTED) {
 				supportsTextToSpeech = false;
@@ -361,7 +358,7 @@ public class MainActivity extends FragmentActivity implements
 	}
 
 	public void speakOutPhrase(View v) {
-		TextView textview = (TextView) findViewById(R.id.japanesePhrase);
+		TextView textview = (TextView) findViewById(R.id.spanishPhrase);
 		speakOut(textview.getText().toString());
 	}
 
@@ -751,10 +748,8 @@ public class MainActivity extends FragmentActivity implements
 			} else {
 				dynamicdb.addWord(w);
 			}
-
 		}
 		startActivity(new Intent(MainActivity.this, MainActivity.class));
-
 	}
 
 	@Override
